@@ -1,0 +1,27 @@
+name: Parallel Jobs
+
+on: workflow_dispatch
+
+jobs:
+  job_A:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delay in Job A
+        run: |
+          echo "Job A is running"
+          sleep 15
+
+  job_B:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delay in Job B
+        run: |
+          echo "Job B is running"
+          sleep 5
+
+  job_C:
+    runs-on: ubuntu-latest
+    needs: [job_A, job_B]
+    steps:
+      - name: Run Job C
+        run: echo "Job C is running after Job A and Job B"
