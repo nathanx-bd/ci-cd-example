@@ -10,7 +10,7 @@ const clickCountSpan = document.getElementById(
 const image = document.getElementById("centered-image") as HTMLImageElement;
 
 let count = 0;
-let images = ["images/shou.jpg", "images/trump.jpg", "images/dong.jpg"];
+const images = ["images/shou.jpg", "images/trump.jpg", "images/dong.jpg"];
 
 clickMeButton.addEventListener("click", () => {
   setImage(count);
