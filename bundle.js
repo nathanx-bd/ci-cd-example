@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./src/sum.ts\");\n\nconst clickMeButton = document.getElementById(\"click-me-btn\");\nconst clickCountSpan = document.getElementById(\"click-count\");\nconst image = document.getElementById(\"centered-image\");\nlet count = 0;\nlet images = [\"images/shou.jpg\", \"images/trump.jpg\", \"images/dong.jpg\"];\nclickMeButton.addEventListener(\"click\", () => {\n    setImage(count);\n    count = (0,_sum__WEBPACK_IMPORTED_MODULE_0__.sum)(count, 1);\n    clickCountSpan.innerHTML = count.toString();\n});\nfunction setImage(index) {\n    image.src = images[index % images.length];\n}\n\n\n//# sourceURL=webpack://ci-cd-example/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./src/sum.ts\");\n\nconst clickMeButton = document.getElementById(\"click-me-btn\");\nconst clickCountSpan = document.getElementById(\"click-count\");\nconst image = document.getElementById(\"centered-image\");\nlet count = 0;\nconst images = [\"images/shou.jpg\", \"images/trump.jpg\", \"images/dong.jpg\"];\nclickMeButton.addEventListener(\"click\", () => {\n    setImage(count);\n    count = (0,_sum__WEBPACK_IMPORTED_MODULE_0__.sum)(count, 1);\n    clickCountSpan.innerHTML = count.toString();\n});\nfunction setImage(index) {\n    image.src = images[index % images.length];\n}\n\n\n//# sourceURL=webpack://ci-cd-example/./src/index.ts?");
 
 /***/ }),
 
