@@ -10,12 +10,13 @@ const clickCountSpan = document.getElementById(
 const image = document.getElementById("centered-image") as HTMLImageElement;
 
 let count = 0;
-const images = ["images/shou.jpg", "images/trump.jpg", "images/dong.jpg"];
+const images = ["images/shou.jpg", "images/albanese.jpg", "images/dong.jpg"];
+setImage(count);
 
 clickMeButton.addEventListener("click", () => {
-  setImage(count);
   count = sum(count, 1);
   clickCountSpan.innerHTML = count.toString();
+  setImage(count);
 });
 
 function setImage(index: number) {
